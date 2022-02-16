@@ -41,17 +41,9 @@ function fetchNextPage(url1){
 function renderResults(results){
     const list1 = document.getElementById('displayResults');
     const q = document.getElementById('inputQuery');
-
-    //list1.innerHTML = "";
     const element = document.createElement('li');
     element.innerText = JSON.stringify(results)
     list1.appendChild(element);
-    
-    /*
-    if(Object.keys(results).includes('nextPage')){
-        const nextPageNumber = results.nextPage
-        fetchNextPage(nextPageNumber, q);
-    }    */
 }
 
 
